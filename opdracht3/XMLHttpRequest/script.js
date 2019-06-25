@@ -15,7 +15,7 @@ console.log("loader",loaderElement);
 ////https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
 function showData(jsonObj) {
   var data = jsonObj;
-  console.log("JsonObj data",data);
+  console.log("JsonObj data", data);
   console.log("squadName",data['squadName'])
 
   //data uit de json halen

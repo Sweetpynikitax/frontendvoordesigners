@@ -1,0 +1,107 @@
+h1 {
+    font-family: sexy shout;
+    font-size: 2.2em;
+    color: white
+}
+
+h3 {
+    font-family: futura;
+    color: white
+}
+
+p {
+    font-family: futura;
+    color: white
+}
+
+
+.play {
+    margin-top: 0px;
+    padding: 14px;
+    border-radius: 100px;
+    background-color: #DA6CDB;
+}
+
+.play img {
+    width: 30px;
+    padding-left: 3px;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+}
+
+.loper {
+    position: absolute;
+    top: 13em;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 1em;
+}
+
+li a {
+    font-family: futura;
+    color: #DA6CDB;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-bottom: solid #DA6CDB;
+    ;
+}
+
+li a:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+.Drake {
+    position: absolute;
+    left: 40vw;
+    top: 0px;
+    width: 55vw;
+
+}
+
+body {
+    background-color: black;
+}
+
+.playsection {
+    position: absolute;
+    left: 15vw;
+    top: 20vw;
+    z-index: 100;
+}
+
+main {
+    position: relative;
+    top: 80vh;
+    margin: 1em;
+}
+
+.empty {
+    display: inline-block;
+    margin: 2em;
+    margin-left: auto;
+    border: solid 0.5px white;
+    width: 200px;
+    height: 290px;
+    align-content: center;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
+
+.empty:hover {
+    border: solid 0.5px #DA6CDB;
+    transition: 0.4s;
+}
+
+button {
+    cursor: pointer;
+}

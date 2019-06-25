@@ -62,74 +62,90 @@ function dragDrop() {
 
 // Code voor Json
 
+var uri = "https://raw.githubusercontent.com/Sweetpynikitax/frontendvoordesigners/master/opdracht3/Muzie%20eindopdracht%20v2/Json/Muzie.json";
+
+//Playsection
 var playRight = document.querySelector('#playRight');
 var play = document.querySelector('.play');
 var playLeft = document.querySelector('#playLeft');
+
+//Veranderende elementen
 var background = document.querySelector('.Drake');
 var songName = document.querySelector('.songname');
 var songArtist = document.querySelector('.songartist');
 
-
-function bladerHeen(event) {
-    background.src = '/Images/Ciara.png';
-    songName.textContent = 'Freak me';
-    songArtist.textContent = 'Ciara, Wizkid';
-}
-
-function bladerWeer(event) {
-    background.src = '/Images/Drake.png';
-    songName.textContent = 'Going Bad';
-    songArtist.textContent = 'Meek Mill, Drake';
-}
-
-playRight.addEventListener('click', bladerHeen);
-playLeft.addEventListener('click', bladerWeer);
-
-var requestURL = '/Json/Muzie.json';
-var request = new XMLHttpRequest();
+function showData(jsonObj) {
+    var data = jsonObj;
+    var playList = jsonObj['playlist'];
+    console.log("playlist", playList);
 
 
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
 
-request.onload = function () {
-    var Muzie = request.response;
-    populatesection(Muzie);
-    showMuzie(Muzie);
-}
 
-function populateHeader(jsonObj) {
-    var myH1 = document.createElement('h1');
-    myH1.textContent = jsonObj['NameSong'];
-    section.appendChild(myH1);
 
-    var myPara = document.querySelector('.songartist');
-    myH1.textContent = jsonObj['NameArtist'];
-    header.appendChild(myPara);
 
-    var myBackground = document.querySelector('.Drake');
-    myBackground.textContent = jsonObj['Image'];
-    header.appendChild(myBackground);
-}
 
-function showMuzie(jsonObj) {
-    var song = jsonObj['NameSong'];
 
-    for (var i = 0; i < Muzie.length; i++) {
+    //function bladerHeen(event) {
+    //    background.src = '/Images/Ciara.png';
+    //    songName.textContent = 'Freak me';
+    //    songArtist.textContent = 'Ciara, Wizkid';
+    //}
+    //
+    //function bladerWeer(event) {
+    //    background.src = '/Images/Drake.png';
+    //    songName.textContent = 'Going Bad';
+    //    songArtist.textContent = 'Meek Mill, Drake';
+    //}
+    //
+    //playRight.addEventListener('click', bladerHeen);
+    //playLeft.addEventListener('click', bladerWeer);
+    //
+    //var requestURL = '/Json/Muzie.json';
+    //var request = new XMLHttpRequest();
+    //
+    //
+    //request.open('GET', requestURL);
+    //request.responseType = 'json';
+    //request.send();
+    //
+    //request.onload = function () {
+    //    var Muzie = request.response;
+    //    populatesection(Muzie);
+    //    showMuzie(Muzie);
+    //}
+    //
+    //function populateHeader(jsonObj) {
+    //    var myH1 = document.createElement('h1');
+    //    myH1.textContent = jsonObj['NameSong'];
+    //    section.appendChild(myH1);
+    //
+    //    var myPara = document.querySelector('.songartist');
+    //    myH1.textContent = jsonObj['NameArtist'];
+    //    header.appendChild(myPara);
+    //
+    //    var myBackground = document.querySelector('.Drake');
+    //    myBackground.textContent = jsonObj['Image'];
+    //    header.appendChild(myBackground);
+    //}
+    //
+    //function showMuzie(jsonObj) {
+    //    var song = jsonObj['NameSong'];
+    //
+    //    for (var i = 0; i < Muzie.length; i++) {
+    //
+    //        var myH1 = document.createElement('h1');
+    //        var myPara = document.querySelector('.songartist');
+    //        var myBackground = document.querySelector('.Drake');
+    //
+    //        myArticle.appendChild(myH1);
+    //        myArticle.appendChild(myPara);
+    //        myArticle.appendChild(myBackground);
+    //
+    //        section.appendChild(Muzie);
+    //    }
+    //}
+    //
+    //request.responseType = 'json';
 
-        var myH1 = document.createElement('h1');
-        var myPara = document.querySelector('.songartist');
-        var myBackground = document.querySelector('.Drake');
-
-        myArticle.appendChild(myH1);
-        myArticle.appendChild(myPara);
-        myArticle.appendChild(myBackground);
-
-        section.appendChild(Muzie);
-    }
-}
-
-request.responseType = 'json';
-
-// Hulp en code van: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
+    // Hulp en code van: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON

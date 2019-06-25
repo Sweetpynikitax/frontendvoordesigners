@@ -1,25 +1,27 @@
-[
-    {
-        "NameSong": "Machine",
-        "NameArtist": "SFB",
-        "Image": "SFB.png",
+{
+    "playlist": [
+        {
+
+            "NameSong": "Machine",
+            "NameArtist": "SFB",
+            "Image": "SFB.png",
     },
 
-    {
-        "NameSong": "Freak me",
-        "NameArtist": "Ciara, Wizkid",
-        "Image": "Ciara.png",
+        {
+            "NameSong": "Freak me",
+            "NameArtist": "Ciara, Wizkid",
+            "Image": "Ciara.png",
     },
 
-    {
-        "NameSong": "Alele",
-        "NameArtist": "Flavour, Seyi Shay",
-        "Image": "Seyi.png",
+        {
+            "NameSong": "Alele",
+            "NameArtist": "Flavour, Seyi Shay",
+            "Image": "Seyi.png",
     },
 
-    {
-        "NameSong": "Going Bad",
-        "NameArtist": "Meek mill, Drake",
-        "Image": "Drake.png",
+        {
+            "NameSong": "Going Bad",
+            "NameArtist": "Meek mill, Drake",
+            "Image": "Drake.png",
     }
 ]
